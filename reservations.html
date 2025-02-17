@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cup Café</title>
+    <link rel = "stylesheet" href="style.css">
+    <script type="text/javascript" src="popup.js"></script>
+
+</head>
+<body>
+
+    <nav>
+        <img src="images/logo.png" alt="logo" width="50" class="logo">
+        <ul class="nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="container">
+        <div class="container-time">
+            <h2 class="heading"> Business Hours </h2>
+
+            <p>Monday: 8:00 AM - 8:00 PM</p>
+            <p>Tuesday: 8:00 AM - 8:00 PM</p>
+            <p>Wednesday: 8:00 AM - 8:00 PM</p>
+            <p>Thursday: 8:00 AM - 8:00 PM</p>
+            <p>Friday: 8:00 AM - 8:00 PM</p>
+            <p>Saturday: 10:00 AM - 6:00 PM</p>
+            <p>Sunday: 10:00 AM - 6:00 PM</p>
+
+        </div>
+    
+        <div class="container-form">
+            <form id="reservation-form">
+                <h2 class="heading-yellow"> Reserve Online </h2>
+                <div class="form-field">
+                    <p>Your Name</p>
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+    
+                <div class="form-field">
+                    <p>Your Email</p>
+                    <input type="text" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-field">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-field">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time">
+                </div>
+    
+                <div class="form-field">
+                    <label for="people">People:</label>
+                    <select id="people">
+                        <option value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="6">6 people</option>
+                        <option value="7">7 people</option>
+                        <option value="8">8 people</option>
+                        <option value="9">9 people</option>
+                        <option value="10">10 people</option>
+                    </select>
+                    </div>
+            </form>
+            <button class="btn" onclick="submit()">Submit</button>
+    
+            <div class="popup" id="popup">
+                <div class="popup-text">
+                    <h3>Your reservation has been confirmed.</h3>
+                    <h3>Thank you for booking with us!</h3>
+                    <p>Date: <span id="popup-date"> </span> </p>
+                    <p>Time: <span id="popup-time"></span></p>
+                    <p>People: <span id="popup-people"> </span></p>
+                </div>
+                <div class="okbutton">
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-icons">
+                <h2>GET IN TOUCH</h2>  
+                <div class="pin-footer">
+                    <img src="images/pin.png" width="50">
+                    <p> 123 New York Avenue, New York 12345</p>
+                </div>
+                <div class="phone-footer">
+                    <img src="images/phone-png-2.png" width="45">
+                    <p> (123) 456-7890</p>
+                </div>
+                <div class="mail-footer">
+                    <img src="images/mail.png" width="50">
+                    <p> cozycup@gmail.com</p>
+                </div> 
+            </div>
+            <div class="media-links">
+                <h2>FOLLOW US</h2>  
+                <ul class="footer_links">
+                    <li>
+                        <img src="images/tiktoks.webp" width="60">
+                    </li>
+                    <li>
+                        <img src="images/instagram-new.png" width="60">
+                    </li>
+                    <li>
+                        <img src="images/facebook.png" width="50">
+                    </li>
+                </ul>    
+                   
+            </div>
+            <div class="media-links">
+                <h2>OPEN HOURS</h2>  
+                <div class="opening-hours">
+                    <p>Monday - Friday</p>
+                    <p>8:00 AM - 9:00 PM</p>
+                    <p>Saturday-Sunday</p>
+                    <p>10:00 AM - 6:00 PM</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+   
+</body>
+</html>
